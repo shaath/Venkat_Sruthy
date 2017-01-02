@@ -1,0 +1,19 @@
+package testNG;
+
+import org.testng.annotations.BeforeMethod;
+
+import functions.FunctionMaster;
+
+public class OrgHRMLogin 
+{
+	
+	FunctionMaster fm=new FunctionMaster();
+	
+	@BeforeMethod
+	public void Launch()
+	{
+		String res=fm.org_LAunch("http://opensource.demo.orangehrmlive.com");
+		System.out.println(res);
+	}
+
+}
